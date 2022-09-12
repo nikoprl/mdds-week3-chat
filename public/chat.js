@@ -14,6 +14,8 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
 socket.on("chat message", (msg, user) => {
   const item = document.createElement("li");
+  item.classList.add("py-1", "px-3");
+  
   item.innerHTML =
     `<div class="message-line"><span class="usrnm">` +
     user +
